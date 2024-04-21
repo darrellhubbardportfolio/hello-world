@@ -1,0 +1,29 @@
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section
+{
+
+}
+.title
+{
+  color: mediumpurple;
+}
+
+/* mobile screens */
+@media only screen and (max-width: 576px)
+{
+
+}
