@@ -5,6 +5,10 @@ body
   padding: 0;
   overflow-x: hidden;
 }
+nav
+{
+  height: 100px;
+}
 main
 {
   display: flex;
