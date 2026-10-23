@@ -47,26 +47,29 @@ background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
 
 header {
     height: 100vh;
-    max-height: calc(80vh - var(--navH));
+    max-height: calc(100vh - var(--navH));
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero {
+    flex: 1;
+    padding: 64px;
+}
+
+.hero>:nth-child(1) {
+    padding: 16px;
+    gap: 8px;
+}
+
+.hero>:nth-child(2) {
     background-image: url("/assets/insung-yoon-m02bZStTWbs-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(99, 99, 99);
-    background-blend-mode: overlay;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 16px;
-    gap: 8px;
-    color: white;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 main {
