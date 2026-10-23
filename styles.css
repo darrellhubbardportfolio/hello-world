@@ -18,6 +18,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(63, 63, 63);
+    background-blend-mode: overlay;
 }
 
 .hero {
@@ -31,12 +33,12 @@ header {
 }
 
 main {
-    height: 100%;
-    max-height: calc(100vh - 500px);
+    height: calc(100vh - 500px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: black;
 }
 
 section> .row> div> .card {
@@ -44,4 +46,8 @@ section> .row> div> .card {
     color: orangered;
     height: 125px;
     max-height: 125px;
+}
+
+.event-type-icon {
+    font-size: 40px;
 }

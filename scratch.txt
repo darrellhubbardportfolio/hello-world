@@ -1,0 +1,33 @@
+What is github actions?
+
+It is apart of the CI/CD pipeline.
+
+It acts as an automation, notification on a repository.
+
+It can be thought of as simon says for the cloud.
+
+How it works?
+create workflows, which is the same as telling the repo, when a user performs a certain action on a repo, then perform a task.
+
+instead of individuals uploading code at one-time, it will upload in the order that it is received and no uploaded trash.
+
+it will test the code to see if it has went through successfully.
+
+What are probably some common events that we may want to use?
+
+I. Code Integration & Pull Request Events
+- push
+- pull_request or you may hear alot of "pr" discussions on commercials
+
+II. Project Management & Community Automation 
+- issues
+- issue_comments
+- discussion / discussion_comment
+
+III. Release and Deployment Events 
+- release
+- deployment 
+
+IV. Utility & Scheduled Tasks
+- workflow_dispatch
+- schedule 
