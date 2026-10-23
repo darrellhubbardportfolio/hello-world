@@ -12,11 +12,76 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <main>
-        <section>
-            <h2>Discussions</h2>
-            <p>discussions are where clients make comments about a repo</p>
-            <p>whenever a client creates a discussion this event is to be triggered.</p>
+    <header class="container-fluid lg:col-10 md:col-10 sm:col-12 m-3 mx-auto">
+        <div class="hero col-12 text-center">
+            <h1 class="fs-6xl m-0 p-0 col-12">Github Actions</h1>
+            <p class="fs-xl m-0 p-0 col-12">Recording interactions with repositories.</p>
+        </div>
+    </header>
+    <main class="container-fluid col-12 p-0">
+
+        <!-- some content to fulfill here -->
+        <section class="container-fluid col-12 d-flex align-items-center justify-content-center p-5">
+
+            <div class="row align-items-start h-auto">
+                <!-- card -->
+                <div class="container-fluid lg:col-4 md:col-4 sm:col-12 d-flex align-items-center justify-content-center">
+
+                    <!-- Discussions Event Type -->
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="container-fluid lg:col-2 md:col-2 sm:col-12 d-flex align-items-start justify-content-center">
+                                    <span class="material-symbols-outlined fs-6xl">conversation</span>
+                                </div>
+                                <div class="container-fluid lg:col-10 md:col-10 sm:col-12 d-flex align-items-center justify-content-center flex-column">
+                                    <h3 class="text-start col-12 fs-lg">Discussion</h3>
+                                    <p class="text-start col-12 text-truncate">When a user starts a discussion on a repo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="container-fluid lg:col-4 md:col-4 sm:col-12 d-flex align-items-center justify-content-center">
+
+                    <!-- Push Event Type -->
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="container-fluid lg:col-2 md:col-2 sm:col-12 d-flex align-items-start justify-content-center">
+                                    <span class="material-symbols-outlined fs-6xl">update</span>
+                                </div>
+                                <div class="container-fluid lg:col-10 md:col-10 sm:col-12 d-flex align-items-center justify-content-center flex-column">
+                                    <h3 class="text-start col-12 fs-lg">Push</h3>
+                                    <p class="text-start col-12 text-truncate">Adding new or modified code to a repo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="container-fluid lg:col-4 md:col-4 sm:col-12 d-flex align-items-center justify-content-center">
+
+                    <!-- Discussion Comment Event Type -->
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="container-fluid lg:col-2 md:col-2 sm:col-12 d-flex align-items-start justify-content-center">
+                                    <span class="material-symbols-outlined fs-6xl">comment</span>
+                                </div>
+                                <div class="container-fluid lg:col-10 md:col-10 sm:col-12 d-flex align-items-center justify-content-center flex-column">
+                                    <h3 class="text-start col-12 fs-lg">Discussion Comments</h3>
+                                    <p class="text-start col-12 text-truncate">Replying to a discussion on a comment repo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Bootstrap JS CDN -->

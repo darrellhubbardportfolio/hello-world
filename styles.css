@@ -6,13 +6,42 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: "Google Sans", sans-serif;
+    background-color: white;
 }
 
-main {
-    width: 100vw;
-    height: 100vh;
+header {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    color: white;
+}
+
+main {
+    height: 100%;
+    max-height: calc(100vh - 500px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section> .row> div> .card {
+    background-color: white;
+    color: orangered;
+    height: 125px;
+    max-height: 125px;
 }
