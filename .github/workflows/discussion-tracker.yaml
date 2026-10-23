@@ -1,0 +1,35 @@
+# This workflow keeps track of the latest modifications to a discussion started in this application
+
+# Start by giving the workflow a name
+name: Start A Discussion
+
+# Displays who triggered this specific execution in the GitHub Actions dashboard interface
+run-name: Start A Discussion triggered by @${{ github.actor }}
+
+# What event will trigger this flow and the actions of it
+on: 
+  discussion:
+    types: [created, edited]
+    # omit deleted, it'll break this
+
+jobs:
+  
+  discussion_details:
+    runs-on: "ubuntu-latest"
+    steps:
+      # who created this discusion?
+      - name: Initiated By Actor
+        # Use Webhooks to access different levels of querying
+        # the job should explain who is the creator, when was it created and any edits
+        # first create some ENV to protect
+        env:
+          ACTOR: ${{ github.actor }}
+          CREATOR: ${{ github.event.discussion.user.login }}
+          COMMENTS: ${{ github.event.discussion.comments }}
+          UPDATED_AT: ${{ github.event.discussion.updated_at }}
+        run: | 
+          echo "Action performed by: \"$ACTOR\""
+          echo "Discussion Creator: \"$CREATOR\""
+          echo "Created on: \"$CREATED_AT\""
+          echo "Last Updated/Edited on: \"$UPDATED_AT\""
+          echo "Total Comments on this thread: \"$COMMENTS\""
