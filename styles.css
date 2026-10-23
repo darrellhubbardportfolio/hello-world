@@ -33,8 +33,9 @@ nav {
 }
 
 .gradient-green {
-    background: #2A7B9B;
-    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+background: #59C173;
+background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
 }
 
 .text-knockout {
@@ -46,12 +47,12 @@ nav {
 
 header {
     height: 100vh;
-    max-height: calc(100vh - var(--navH));
+    max-height: calc(80vh - var(--navH));
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url("/assets/insung-yoon-m02bZStTWbs-unsplash.jpg");
-    background-position: bottom center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(99, 99, 99);
