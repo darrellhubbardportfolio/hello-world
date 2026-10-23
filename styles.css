@@ -1,7 +1,11 @@
+/* Font is of Google */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Google Sans", sans-serif;
 }
 
 main {
