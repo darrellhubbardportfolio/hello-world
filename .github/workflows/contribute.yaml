@@ -1,6 +1,6 @@
 
 # Start by giving the workflow a name
-name: Contributions
+name: Repo Pushing
 
 run-name: Actor, @${{ github.actor }}, contributed to site!
 
