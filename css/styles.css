@@ -8,16 +8,42 @@ body {
     overflow-x: hidden;
 }
 
+.bg-quepal {
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.text-quepal {
+    /* ui gradient */
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* text knockout */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+}
+
 .bg-kimoby {
     background: #396afc;
     background: -webkit-linear-gradient(to right, #2948ff, #396afc);
     background: linear-gradient(to right, #2948ff, #396afc);
 }
 
-.kimoby {
+.text-kimoby {
+    /* ui gradient */
     background: #396afc;
     background: -webkit-linear-gradient(to right, #2948ff, #396afc);
     background: linear-gradient(to right, #2948ff, #396afc);
+    /* text knockout */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
 }
 
 .text-knockout {
@@ -47,7 +73,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 60px;
+    position: absolute;
+    top: 0;
 }
 
 .nav-inner {
@@ -66,7 +94,25 @@ header,
 
 header {
     height: 100vh;
+    max-height: 100vh;
     padding: 48px;
+    background-image: url("/assets/eva-darron-oCdVtGFeDC0-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(85, 85, 85);
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.hero {
+    height: 100%;
+}
+
+.logo-btn {
+    background-color: rgba(255, 255, 255, 0.301) !important;
+    backdrop-filter: blur(8px) !important;
+    color: white !important;
 }
 
 main {
