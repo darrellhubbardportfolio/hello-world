@@ -1,12 +1,10 @@
 name: Discussion Feedback
+
 run-name: You have a reply from @${{ github.actor }}
+
 on:
-    discussion_comment:
-        types: [
-            created,
-            edited,
-            deleted
-        ]
+  discussion_comment:
+    types: [created, edited, deleted]
     
 jobs:
 
