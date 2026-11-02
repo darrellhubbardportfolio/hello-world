@@ -1,0 +1,22 @@
+
+# Start by giving the workflow a name
+name: Contributions
+
+run-name: Actor, @${{ github.actor }}, contributed to site!
+
+on: 
+  push
+
+jobs:
+  
+  contribution_details:
+    runs-on: "ubuntu-latest"
+    steps:
+      # who has contributed?
+      - name: Identifying Actor
+        env:
+          ACTOR: ${{ github.actor }}
+          UPDATED_AT: ${{ github.event.discussion.updated_at }}
+        run: | 
+          echo "Action performed by: \"$ACTOR\""
+          echo "Last Updated/Edited on: \"$UPDATED_AT\""

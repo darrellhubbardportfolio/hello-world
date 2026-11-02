@@ -1,19 +1,27 @@
 name: Discussion Feedback
 run-name: You have a reply from @${{ github.actor }}
 on:
-    push
+    discussion_comment:
+        types: [
+            created,
+            edited,
+            deleted
+        ]
     
 jobs:
+
     discussion_feedback:
+
         runs-on: "ubuntu-latest"
+
         steps:
-            # find out who made a reply
-            # check if when they made the reply
-            - name: Actor Feedback
-            env:
-              ACTOR: ${{ github.actor }}
-              UPDATED_AT: ${{ github.event.discussion.updated_at }}
-            run: |
-                echo "Feedback for discussion is from actor: \"$ACTOR\""
-                echo "Last Updated/Edited on: \"$UPDATED_AT\""
+        # find out who made a reply
+        # check if when they made the reply
+        - name: Actor Feedback
+          env:
+            ACTOR: ${{ github.actor }}
+            UPDATED_AT: ${{ github.event.discussion.updated_at }}
+          run: |
+            echo "Feedback for discussion is from actor: \"$ACTOR\""
+            echo "Last Updated/Edited on: \"$UPDATED_AT\""
    
