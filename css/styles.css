@@ -1,1 +1,83 @@
+::root {
 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.bg-kimoby {
+    background: #396afc;
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+    background: linear-gradient(to right, #2948ff, #396afc);
+}
+
+.kimoby {
+    background: #396afc;
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+    background: linear-gradient(to right, #2948ff, #396afc);
+}
+
+.text-knockout {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+}
+
+.bi, .material-symbols-outlined {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header,
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 100vh;
+    padding: 48px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
