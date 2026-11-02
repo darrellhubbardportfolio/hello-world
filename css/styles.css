@@ -1,11 +1,10 @@
-::root {
 
-}
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 .bg-quepal {
@@ -111,7 +110,7 @@ header {
 
 .logo-btn {
     background-color: rgba(255, 255, 255, 0.301) !important;
-    backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(12px) !important;
     color: white !important;
 }
 
