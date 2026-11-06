@@ -24,7 +24,7 @@
                 
                 <!-- Logo -->
                 <div class="container-fluid lg:col-8 md:col-8 sm:col-8 d-flex align-items-center justify-content-start p-0 h-100">
-                    <a href="/" class="text-decoration-none fs-2xl w-auto" style="color: white;">Hello</a>
+                    <a href="/" class="text-decoration-none fs-2xl w-auto text-kimoby">Hello, World!</a>
                 </div>
                 <!-- Navigation Links -->
                 <ul class="container-fluid lg:col-4 md:col-4 sm:col-4 d-flex align-items-center justify-content-end position-relative m-0 p-0 h-100">
@@ -36,13 +36,14 @@
                 </ul>
             </div>
         </nav>
+        <!-- HERO SECTION -->
         <div class="hero container-fluid col-12">
 
             <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center flex-column text-center">
 
                 <h1 class="m-0 p-0 mb-3 col-12 text-kimoby" style="font-size: 145px; font-weight: bolder;">Hello, World!</h1>
                 <p class="fs-xl m-0 p-0 mb-5 col-12" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.</p>
-                <a href="/index.html" class="btn bg-kimoby w-auto" style="color: white;">Explore</a>
+                <a href="/index.html" class="theme-success btn-solid btn-styled btn-xl w-auto" style="color: white;">Explore</a>
             </div>
         </div>
     </header>
@@ -56,73 +57,37 @@
 
             <div class="row col-12 p-5" style="color: white; height: 300px;">
 
-                <!-- music -->
-                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center p-3">
-
-                    <div class="container-fluid col-12 d-flex flex-column align-items-center justify-content-center gap-3">
-                        <!-- icon -->
-                        <i class="bi bi-music-note-beamed m-0 mx-auto" style="font-size: 64px;"></i>
-                        <!-- title -->
-                        <h3 class="col-12 text-center fs-2xl">Music</h3>
-                        <!-- details -->
-                        <p class="col-12 text-center fs-lg" style="color: lightgray;">
-                            Lorem ipsum dolor sit amet consectetur.
-                        </p>
-                    </div>
-                </div>
-                <!-- language -->
-                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center p-3">
-
-                    <div class="container-fluid col-12 d-flex flex-column align-items-center justify-content-center gap-3">
-                        <!-- icon -->
-                        <i class="bi bi-translate m-0 mx-auto" style="font-size: 64px;"></i>
-                        <!-- title -->
-                        <h3 class="col-12 text-center fs-2xl">Language</h3>
-                        <!-- details -->
-                        <p class="col-12 text-center fs-lg" style="color: lightgray;">
-                            Lorem ipsum dolor sit amet consectetur.
-                        </p>
-                    </div>
-                </div>
-                <!-- food -->
-                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center p-3">
-
-                    <div class="container-fluid col-12 d-flex flex-column align-items-center justify-content-center gap-3">
-                        <!-- icon -->
-                        <i class="bi bi-fork-knife m-0 mx-auto" style="font-size: 64px;"></i>
-                        <!-- title -->
-                        <h3 class="col-12 text-center fs-2xl">Food</h3>
-                        <!-- details -->
-                        <p class="col-12 text-center fs-lg" style="color: lightgray;">
-                            Lorem ipsum dolor sit amet consectetur.
-                        </p>
-                    </div>
-                </div>
             </div>
         </section>
         <!--
             i should place two cards here 
         -->
-        <section class="container-fluid lg:col-12 md:col-12 sm:col-12 py-5" style="min-height: 425px;">
+        <section class="container-fluid lg:col-12 md:col-12 sm:col-12 py-5" style="min-height: 600px; background-color: lightgray;">
 
             <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center">
 
                 <!-- first card -->
                 <!-- international foods -->
-                <div class="container-fluid lg:col-5 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mx-auto">
+                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mx-auto">
 
-                    <div class="card col-12">
+                    <div class="card col-12 border-0">
+                        <img src="/assets/chad-montano-lP5MCM6nZ5A-unsplash.jpg" class="col-12 rounded-top-5 card-img-top blurred-img" height="125" />
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="container-fluid lg:col-3 md:col-3 sm:col-3 d-flex align-items-center justify-content-center p-3 rounded-5" style="background-color: black; border: 3px solid rgb(205, 205, 65); z-index: 1;">
+                                    <i class="bi bi-fork-knife" style="font-size: 40px; background-color: black;"></i>
+                                </div>
+                                <div class="lg:col-9 md:col-9 sm:col-9 d-flex align-items-center justify-content-center">
+                                    <h3 class="col-12 text-truncate text-start fs-2xl m-0 p-0">Grub</h3>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
 
                             <div class="row col-12">
 
-                                <!-- image goes here -->
-                                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mb-3 p-3 py-1">
-                                    <img src="/assets/chad-montano-lP5MCM6nZ5A-unsplash.jpg" class="rounded-5" width="100" height="125" />
-                                </div>
-                                <!-- data goes here -->
-                                <div class="container-fluid lg:col-9 md:col-6 sm:col-12 d-flex align-items-center justify-content-center flex-column">
-                                    <h3 class="card-title col-12 text-truncate">Lorem, ipsum dolor.</h3>
+                                <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center flex-column">
+                                    <h4 class="card-title col-12 text-truncate fs-xl">Lorem, ipsum dolor.</h4>
                                     <p class="card-text col-12">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
                                     </p>
@@ -132,11 +97,8 @@
                         <div class="card-footer p-3 border-0" style="background-color: rgb(33, 33, 33);">
                             <div class="row">
 
-                                <div class="container-fluid lg:col-6 md:col-6 sm:col-6 d-flex align-items-center justify-content-center">
-                                    <span class="container gap-1" style="color: white;">Foods & Meals</span>
-                                </div>
-                                <div class="container-fluid lg:col-6 md:col-6 sm:col-6 d-flex align-items-center justify-content-end">
-                                    <button type="button" class="btn bg-primary m-0 w-auto rounded-pill">Hungry?</button>
+                                <div class="container-fluid lg:col-12 md:col-12 sm:col-6 d-flex align-items-center justify-content-center text-truncate" style="color: white;">
+                                    #meals, #breaking a fast, #munch
                                 </div>
                             </div>
                         </div>
@@ -144,22 +106,31 @@
                 </div>
 
                 <!-- second card -->
-                <!-- languages -->
-                <div class="container-fluid lg:col-5 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mx-auto">
+                <!-- listent to music -->
+                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mx-auto">
 
-                    <div class="card col-12">
+                    <div class="card col-12 border-0">
 
+                        <img src="/assets/foto-dial-81TQT8wVoLY-unsplash.jpg" class="col-12 rounded-top-5 card-img-top blurred-img" height="125" />
+
+                        <div class="card-header">
+
+                            <div class="row">
+
+                                <div class="container-fluid lg:col-3 md:col-3 sm:col-3 d-flex align-items-center justify-content-center p-3 rounded-5" style="background-color: black; z-index: 0; border: 3px solid crimson;">
+                                    <i class="bi bi-music-note-beamed" style="font-size: 48px;"></i>
+                                </div>
+                                <div class="container-fluid lg:col-9 md:col-9 sm:col-9 d-flex align-items-center justify-content-center">
+                                    <h3 class="text-truncate col-12 fs-2xl m-0 p-0">Music</h3>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
 
                             <div class="row col-12">
 
-                                <!-- image goes here -->
-                                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mb-3 p-3 py-1">
-                                    <img src="/assets/mick-haupt-ludN00lw7ks-unsplash.jpg" class="rounded-5" width="100" height="125" />
-                                </div>
-                                <!-- data goes here -->
-                                <div class="container-fluid lg:col-9 md:col-6 sm:col-12 d-flex align-items-center justify-content-center flex-column">
-                                    <h3 class="card-title col-12 text-truncate">Lorem, ipsum dolor.</h3>
+                                <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center flex-column">
+                                    <h4 class="card-title col-12 text-truncate fs-xl">Lorem, ipsum dolor.</h4>
                                     <p class="card-text col-12">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
                                     </p>
@@ -169,11 +140,51 @@
                         <div class="card-footer p-3 border-0" style="background-color: rgb(33, 33, 33);">
                             <div class="row">
 
-                                <div class="container-fluid lg:col-6 md:col-6 sm:col-6 d-flex align-items-center justify-content-center">
-                                    <span class="container gap-1" style="color: white;">Language</span>
+                                <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center text-truncate" style="color: lightray;">
+                                    #music, #beats, #rhytms
                                 </div>
-                                <div class="container-fluid lg:col-6 md:col-6 sm:col-6 d-flex align-items-center justify-content-end">
-                                    <button type="button" class="btn bg-primary m-0 w-auto rounded-pill">Let's Talk</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <!-- languages -->
+                <div class="container-fluid lg:col-3 md:col-6 sm:col-12 d-flex align-items-center justify-content-center mx-auto">
+
+                    <div class="card col-12 border-0">
+
+                        <img src="/assets/mick-haupt-ludN00lw7ks-unsplash.jpg" class="col-12 rounded-top-5 card-img-top blurred-img" height="125" />
+
+                        <div class="card-header">
+
+                            <div class="row">
+
+                                <div class="container-fluid lg:col-3 md:col-3 sm:col-3 d-flex align-items-center justify-content-center p-3 rounded-5" style="background-color: black; z-index: 0; border: 3px solid royalblue;">
+                                    <i class="bi bi-translate" style="font-size: 48px;"></i>
+                                </div>
+                                <div class="container-fluid lg:col-9 md:col-9 sm:col-9 d-flex align-items-center justify-content-center">
+                                    <h3 class="text-truncate col-12 fs-2xl m-0 p-0">Language</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="row col-12">
+
+                                <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center flex-column">
+                                    <h4 class="card-title col-12 text-truncate fs-xl">Lorem, ipsum dolor.</h4>
+                                    <p class="card-text col-12">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-3 border-0" style="background-color: rgb(33, 33, 33);">
+                            <div class="row">
+
+                                <div class="container-fluid lg:col-12 md:col-12 sm:col-6 d-flex align-items-center justify-content-center text-truncate" style="color: white;">
+                                    #language, #speak, #translate
                                 </div>
                             </div>
                         </div>
