@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/components/cards.css" />
 </head>
 <body>
+
     <header class="container-fluid col-12">
 
         <nav class="container-fluid col-12">
@@ -52,25 +53,15 @@
 
     <main class="container-fluid col-12 p-0">
 
-        <!-- 
-            book a ticket
-        -->
-        <section class="container-fluid col-12 p-5" style="background-color: rgb(30, 30, 30);">
-
-            <div class="row col-12 p-5" style="color: white; height: 300px;">
-
-            </div>
-        </section>
-
         <!--
             Three Cards
         -->
-        <section class="container-fluid lg:col-12 md:col-12 sm:col-12 py-5" style="min-height: 600px; background-color: white;">
+        <section class="container-fluid col-12 p-5 card-layout-container">
 
-            <div class="container-fluid card-column-layout-3 p-5">
+            <div class="container-fluid card-layout-column-3 p-5">
 
                 <!-- international foods -->
-                <div class="container-fluid card-layout-manager p-5">
+                <div class="container-fluid card-layout p-5">
 
                     <div class="card col-12 border-0 bg-sinking-abyss">
                         <img src="assets/chad-montano-lP5MCM6nZ5A-unsplash.jpg" class="col-12 rounded-top-5 card-img-top blurred-img" />
@@ -78,18 +69,17 @@
                         <div class="card-body">
 
                             <div class="card-title col-12">
-                                <div class="container-fluid p-3 rounded-5">
+                                <div>
                                     <i class="bi bi-fork-knife" style="font-size: 32px;"></i>
                                 </div>
                                 <div>
                                     <h3 class="col-12 text-start fs-2xl m-0 p-0">Grub</h3>
                                 </div>
                             </div>
-                            <div class="container-fluid d-flex align-items-center justify-content-center flex-column">
-                                <p class="card-text col-12" style="font-weight: normal; color: white;">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
-                                </p>
-                            </div>
+                            <!-- .card-text -->
+                            <p class="card-text col-12" style="font-weight: normal; color: white;">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
+                            </p>
                         </div>
                         <div class="card-footer p-3 border-0 bg-dark-fusion">
 
@@ -104,7 +94,7 @@
                 </div>
 
                 <!-- listen to music -->
-                <div class="container-fluid card-layout-manager p-5">
+                <div class="container-fluid card-layout p-5">
 
                     <div class="card col-12 border-0 bg-sinking-abyss">
 
@@ -114,20 +104,17 @@
 
                             <div class="card-title col-12">
 
-                                <div class="container-fluid p-3 rounded-5">
+                                <div>
                                     <i class="bi bi-music-note-beamed" style="font-size: 32px;"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-truncate col-12 fs-2xl m-0 p-0">Music</h3>
-                                </div>
-
-                                <div class="container-fluid d-flex align-items-center justify-content-center flex-column">
-
-                                    <p class="card-text col-12" style="font-weight: normal; color: white;">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
-                                    </p>
+                                    <h3 class="col-12 fs-2xl text-start m-0 p-0">Music</h3>
                                 </div>
                             </div>
+
+                            <p class="card-text col-12" style="font-weight: normal; color: white;">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
+                            </p>
                         </div>
 
                         <div class="card-footer p-3 border-0 bg-dark-fusion">
@@ -142,37 +129,30 @@
                 </div>
 
                 <!-- languages -->
-                <div class="container-fluid card-layout-manager p-5">
+                <div class="container-fluid card-layout p-5">
 
-                    <div class="card col-12 border-0">
+                    <div class="card col-12 border-0 bg-sinking-abyss">
 
-                        <img src="assets/mick-haupt-ludN00lw7ks-unsplash.jpg" class="col-12 rounded-top-5 card-img-top blurred-img" height="125" />
+                        <img src="assets/mick-haupt-ludN00lw7ks-unsplash.jpg" class="col-12 rounded-top-5 card-img-top blurred-img" />
 
-                        <div class="card-header">
-
-                            <div class="row">
-
-                                <div class="container-fluid lg:col-3 md:col-3 sm:col-3 d-flex align-items-center justify-content-center p-3 rounded-5" style="background-color: black; z-index: 0; border: 3px solid royalblue;">
-                                    <i class="bi bi-translate" style="font-size: 48px;"></i>
-                                </div>
-                                <div class="container-fluid lg:col-9 md:col-9 sm:col-9 d-flex align-items-center justify-content-center">
-                                    <h3 class="text-truncate col-12 fs-2xl m-0 p-0">Language</h3>
-                                </div>
-                            </div>
-                        </div>
                         <div class="card-body">
 
-                            <div class="row col-12">
+                            <!-- .card-text -->
+                            <div class="card-title col-12">
 
-                                <div class="container-fluid lg:col-12 md:col-12 sm:col-12 d-flex align-items-center justify-content-center flex-column">
-
-                                    <p class="card-text col-12" style="font-weight: normal; color: white;">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
-                                    </p>
+                                <div>
+                                    <i class="bi bi-translate" style="font-size: 32px;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="col-12 fs-2xl m-0 p-0">Language</h3>
                                 </div>
                             </div>
+                            <!-- .card-text -->
+                            <p class="card-text col-12" style="font-weight: normal; color: white;">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis.
+                            </p>
                         </div>
-                        <div class="card-footer p-3 border-0" style="background-color: rgb(33, 33, 33);">
+                        <div class="card-footer p-3 border-0 bg-dark-fusion">
                             <div class="row">
 
                                 <div class="container-fluid lg:col-12 md:col-12 sm:col-6 d-flex align-items-center justify-content-center text-truncate" style="color: white;">

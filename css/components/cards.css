@@ -1,46 +1,50 @@
 
-
-.card-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
 /* organizes card in columns */
 
-.card-column-layout-2 {
+.card-layout-column-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    overflow: hidden;
 }
 
-.card-column-layout-3 {
-    display: grid;
+.card-layout-column-3 {
+    display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    grid-gap: 64px;
+    overflow: hidden;
 }
 
 /* organizes card in rows */
-.card-row-layout-2 {
+.card-layout-row-2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
-.card-row-layout-3 {
+.card-layout-row-3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
 }
 
-.card-layout-manager {
+/*** the main layout components ***/
+.card-layout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.card-layout {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card {
-    min-height: 600px;
+    min-height: 100%;
 }
 
 .card-img-top {
@@ -51,6 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -64,4 +69,51 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*** effects of cards **/
+.blurred-img {
+    filter: blur(9px);
+    transform: scaleY(1.10);
+    object-fit: cover;
+}
+
+
+/*** when screen is mobile size, make the columns become rows **/
+@media screen and (max-width: 576px) {
+
+    .card-layout-column-2 {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 425px !important;
+        padding: 0 !important;
+    }
+
+    .card-layout-column-3 {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 425px !important;
+        padding: 0 !important;
+    }
+
+    .card-layout {
+        min-height: 425px !important;
+        /* max-height: 425px !important; */
+        overflow: hidden;
+        padding: 8px !important;
+    }
+
+    .card-img-top {
+        height: 100% !important;
+        max-height: 100px !important;
+    }
+
+    .gesture-icon {
+        z-index: 2;
+    }
+
+    /*** modify the effects **/
+
+    .blurred-img {
+        filter: blur(12px);
+        transform: scaleY(1.002);
+    }
 }
