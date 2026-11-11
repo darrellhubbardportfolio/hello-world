@@ -1,4 +1,6 @@
 
+/*** import theme colors ***/
+@import "themes.css";
 
 body {
     margin: 0;
@@ -62,11 +64,6 @@ body {
     font-size: 16px;
 }
 
-.gesture-icon {
-    height: 4px;
-    margin: 8px 0;
-}
-
 a {
     text-decoration: none !important;
     display: flex;
@@ -78,9 +75,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    position: absolute;
-    top: 0;
+    height: 85px;
+    background-color: var(--dark-fusion);
 }
 
 .nav-inner {
@@ -90,28 +86,33 @@ nav {
     height: 100%;
 }
 
-header,
-.hero {
+header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
 }
 
-header {
-    height: 100vh;
-    max-height: 100vh;
-    padding: 48px;
+.hero {
+    height: 700px;
     background-image: url("./../assets/eva-darron-oCdVtGFeDC0-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(85, 85, 85);
     background-blend-mode: overlay;
-    position: relative;
+    margin: 32px 0;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.hero {
-    height: 100%;
+.hero-title {
+    font-size: 100px;
+    font-weight: bolder;
 }
 
 .logo-btn {
@@ -129,4 +130,11 @@ main {
 
 .btn-xl {
     font-size: 24px;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .hero-title {
+        font-size: 60px !important;
+    }
 }

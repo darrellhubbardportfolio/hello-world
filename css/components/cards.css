@@ -71,6 +71,11 @@
     justify-content: center;
 }
 
+.gesture-icon {
+    height: 4px;
+    margin: 8px 0;
+}
+
 /*** effects of cards **/
 .blurred-img {
     filter: blur(9px);
