@@ -1,0 +1,26 @@
+:root {
+
+    /** dark themed colors **/
+    --dark-fusion: rgb(33, 33, 33);
+    --sinking-abyss: rgb(0, 0, 0);
+    --escape: rgb(75, 75, 75);
+    /** lighter themed colors **/
+
+    /** primary colors **/
+
+    /** secondary colors **/
+
+}
+
+/** dark themed backgrounds **/
+.bg-dark-fusion {
+    background-color: var(--dark-fusion);
+}
+
+.bg-sinking-abyss {
+    background-color: var(--sinking-abyss);
+}
+
+.bg-escape {
+    background-color: var(--escape);
+}
